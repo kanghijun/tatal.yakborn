@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>결과 보기</title>
+</head>
+<body>
+  <h2>← <a href="/">메인으로 돌아가기</a></h2>
+  <h3>결과 미리보기</h3>
+  {{ table|safe }}
+  <br><br>
+  <a href="{{ download_link }}">엑셀 다운로드</a>
+</body>
+</html>

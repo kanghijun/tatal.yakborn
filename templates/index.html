@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>품절약 배분기</title>
+</head>
+<body>
+  <h2>← <a href="/">메인으로 돌아가기</a></h2>
+
+  <h3>재고 파일 입력</h3>
+  <form method="POST" enctype="multipart/form-data">
+    <label>붙여넣기:</label><br>
+    <textarea name="stock_pasted" rows="8" cols="80" placeholder="재고 파일을 복사해서 붙여넣기 (TSV 형식)"></textarea><br>
+    <label>또는 파일 업로드:</label><br>
+    <input type="file" name="stock_file"><br><br>
+
+    <h3>요청 파일 입력</h3>
+    <label>붙여넣기:</label><br>
+    <textarea name="request_pasted" rows="8" cols="80" placeholder="요청 파일을 복사해서 붙여넣기 (TSV 형식)"></textarea><br>
+    <label>또는 파일 업로드:</label><br>
+    <input type="file" name="request_file"><br><br>
+
+    <input type="submit" value="배분 결과 생성">
+  </form>
+</body>
+</html>
